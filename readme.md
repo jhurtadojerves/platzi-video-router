@@ -8,8 +8,7 @@
 4. **StaticRouter**. Nos sirve para renderizar una ruta específica, nunca cambia de direcciṕon y se puede usar en *Server Side Render*.
 5. **Native Router**. Pasa usar en React Native, el buen Leo recomienda React Navigation :D
 
-
-## <BrowserRouter>
+# BrowserRouter
 Recibe las siguientes propiedades:
 - **basename**. El path inicial.
 - **getUserConfirmation**. Permite validar si de verdad alguien quiere dejar la página.
@@ -17,13 +16,13 @@ Recibe las siguientes propiedades:
 - **keyLength**. Son un id que se recibe con cada navegación. Por defecto es un código de 6 caracteres.
 - **children**. Es el componente que está dentro del BrowserRouter. 
 
-### <Link>
+## Link
 Tienen las siguientes propieadades:
 - **to.**
 - **replace.** Cambia la ruta en el history. Es decir, reemplaza el valor de la ruta.
-- **innerRef** Obtiene la a "de abajo"; con esto se puede acceder al elemento <a> que renderiza <Link>
+- **innerRef** Obtiene la a "de abajo"; con esto se puede acceder al elemento *a* que renderiza *Link*
 
-### <NavLink>
+## NavLink
 Es igual a Link, se suele usar para elementos de navegacion
 
 - **activeClassName**. Clase de css para elemento activo
@@ -33,7 +32,7 @@ Es igual a Link, se suele usar para elementos de navegacion
 - **strict**. Rutas estrictas
 - **location**. permite realizar comparaciones de rutas.
 
-### <Route>
+## Route
 Es el componente que nos sirve para renderizar los componentes según la ruta.
 
 - **component**. Es el componente que se va a renderizar
@@ -50,14 +49,14 @@ Es el componente que nos sirve para renderizar los componentes según la ruta.
     - search: A;ade un parametro de busqueda
     - state: Nos permite settear nuestro estado
 
-### <Switch>
+### Switch
 - Permite renderizar solamente el primer componente que haga match en la ruta.
 
-### <Redirect>
+### Redirect
 - Permite redireccionar desde una ruta a otra
 - Recibe dos parámetros principal: from y to
 
-#### <Prompt>
+#### Prompt
 - Permite mostrar una alerta cuando se va a abandonar la página
 
 # Install
